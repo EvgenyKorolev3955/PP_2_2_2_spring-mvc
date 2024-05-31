@@ -1,9 +1,8 @@
-package web.controller;
+package web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +15,7 @@ public class HelloController {
 		List<String> messages = new ArrayList<>();
 		messages.add("Hello!");
 		messages.add("I'm Spring MVC application");
-		messages.add("5.2.0 version by sep'19 ");
+		messages.add("To display the cars, click the Button below");
 		model.addAttribute("messages", messages);
 		return "index";
 	}
